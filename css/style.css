@@ -6,6 +6,7 @@
  *  Design by: Iskender Piyale-Sheard
  *  website: izzydoesizzy.com
  *  Created 06-27-2016
+ *  Last Updated: 03-19-2017
  *  ------------------------------------------------------------------
  *  Table of Contents:
 
@@ -82,17 +83,16 @@
  * =================================================================== */
 
  .section-image {
- 	background: #151515 url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=1199&h=799&q=80) no-repeat center center;
+ 	background: #151515 url(https://www.plantes-et-sante.fr/images/photo-8.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    background-attachment: fixed;
     width: 100%;
-    height: 100%;
-    display: table;
+    height: 100vh;
     position: relative;
     text-align: center;
     color: #fff;
+    display:table;
  }
 
  .img-overlay {
@@ -102,13 +102,13 @@
     width: 100%;
     height: 100%;
     background: #111111;
-    opacity: .4;
+    opacity: .7;
  }
 
  .intro {
-    display: table-cell;
     vertical-align: middle;
     text-align: center;
+    display:table-cell;
     -webkit-transform: translateY(-2.1rem);
     -ms-transform: translateY(-2.1rem);
     transform: translateY(-2.1rem);
@@ -172,7 +172,7 @@
 }
 
 .social-footer {
-    position: absolute;
+    position: block;
     padding: 15px;
 }
 
@@ -248,7 +248,7 @@ section {
 
 #skills {
     background: #151515 url(https://images.unsplash.com/photo-1456983933114-c22026990f4b?dpr=2&auto=format&crop=entropy&fit=crop&w=1280&h=720&q=80) no-repeat center center;
-    background-attachment: fixed;
+    height: auto;
 }
 
 
@@ -352,6 +352,18 @@ footer p {
         font-size: 0.9em;
     }
 
+    .social-footer {
+        text-align: center;
+        position:block;
+        text-align: center;
+    }
+
+    .social-footer a {
+        padding: 0.3em;
+        font-size: 1.6em;
+
+    }
+
     .intro-desc {
         font-size: 0.7em;
     }
@@ -375,7 +387,22 @@ footer p {
     #skills {
         background: #151515 url(https://images.unsplash.com/photo-1456983933114-c22026990f4b?dpr=2&auto=format&crop=entropy&fit=crop&w=1280&h=720&q=80) no-repeat center center;
         background-position: top center;
+
     }
 }
 
+@media (max-width: 991px) {
+    .social-footer {
+        text-align: center;
+    }
 
+    footer p {
+    text-align: center;
+    }
+
+}
+
+
+img.rounded-corners {
+    border-radius: 75px;
+}
